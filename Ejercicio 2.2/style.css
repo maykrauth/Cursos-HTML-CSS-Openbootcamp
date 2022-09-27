@@ -1,0 +1,16 @@
+thead {
+    background-color:rgb(31, 31, 106);
+    color: white;
+  }
+   tfoot {
+    color: rgb(43, 43, 88);
+  }
+   table, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  table{
+      width: 300px;
+  }
+ 
