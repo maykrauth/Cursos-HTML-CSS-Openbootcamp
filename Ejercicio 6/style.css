@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.hover{
+    width: 40vw;
+    height: 100px;
+    background-color: rgb(184, 110, 14);
+}
+.hover:hover{
+    background-color: darksalmon;
+}
+span .frase{
+    font-style: italic;
+}
+span .frase::first-letter{
+    font-size: xx-large;
+}
+span .frase::first-line{
+    color: darkgrey;
+}
+span .frase::selection{
+    background-color: bisque;
+}
+#boton-contenerdor{
+    background-color: rgb(106, 106, 221);
+}
+
+button::content{
+    "asdasds"
+}
