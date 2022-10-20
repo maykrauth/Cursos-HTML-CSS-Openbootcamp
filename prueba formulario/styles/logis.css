@@ -68,28 +68,17 @@
 }
 .separator{
     display: flex;
-    width: 416px;
-    height: 14px;
-    gap: 15px;/*separador entre los elementos*/
-    text-align: center;
+    width: 100%;
+    gap: 15px;
 }
-.separador hr{
+.separator hr{
     flex-grow: 1;/*los hr se expanden al maximo de la pantalla*/
     border: none;
     border-top: 1px solid #ccc;/*cambiamos el tamaño de las barras hr*/
     padding: 0;
-    overflow: visible;
-    text-align: center;
-    width: 416px;
-    height: 14px;
 }
-.separador span{
+.separator span{
     color: #8b8b8b;
-    text-align: center;
-    display:flex;
-    position: relative;
-    top: -7px;
-    padding: 0 16px;
 }
 .section-inputs{
     display: flex;
@@ -102,8 +91,7 @@ form{
     align-items: stretch/*center */;
     gap: 30px;
 }
-label{
-    /*width: 100%; esto fue sacado para armar mejor la columna*/
+label/*width: 100%;esto fue sacado para armar mejor la columna*/{
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -111,18 +99,18 @@ label{
 label span{
     font-weight: 700;
 }
-.section-inputs lebel input{/* no es la mejor manera de hacerlo*/
-    width: 100%;
-    background-color: #f3f3f4;
+.section-inputs label input /* no es la mejor manera de hacerlo*/{
+    width: 80%;
+    background-color: #ababad;
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
     outline: none;/*sacamos la division input*/
     font-size: 14pt;
 }
-lebel input{
+label input {
     width: 90%;
-    background-color: #f3f3f4;
+    background-color: #ababad;
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
@@ -130,16 +118,15 @@ lebel input{
     font-size: 14pt;
     transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;/*hacer una transicion/animaciones de la paleta de colores*/
 }
-label input:hover{/*aca vamos a cambiar el boder de los input cuadrados */
-    background-color: white;
-    border: solid 1px #f3f3f4;
-    box-shadow: 0 0 4px #eb50ff4f;/*0hacia el eje de las x un 0hacia el eje de las y*/
-
+label input:hover /*aca vamos a cambiar el boder de los input cuadrados */{
+    background-color: #f3f3f4;
+    border: solid 1px #ababad;
+    box-shadow:0 0 10px #db23f34f;/*0hacia el eje de las x un 0hacia el eje de las y*/
 }
-label input:focus{/*tambien esten los bondes con color cuando se escribe en pantalla*/
-    background-color: white;
-    border: solid 1px #f3f3f4;
-    box-shadow: 0 0 4px #eb50ff4f;
+label input:focus /*tambien esten los bondes con color cuando se escribe en pantalla*/{
+    background-color: #f3f3f4;
+    border: solid 1px #ababad;
+    box-shadow: 0 0 10px #70297a4f;
 }
 .checkbox-label{
     display:flex;
