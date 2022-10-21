@@ -1,0 +1,37 @@
+.padre{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+.hijo{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(173, 173, 160);
+    animation: traslacion 4s ease-in-out infinite forwards alternate;
+    /*transition: transform 1s ease-in 2s;-all quier edecir que van a transicionar todas las propiedades. poniendo la propiedad solo genera el cambia en esa. podemos ver como la transicion va cambiando pero a una velocidad de un segundo*/
+}/*la trasicion parece con la misma cadencia poniendo linear, ease la que viene por defecto ease-in-out al principio y final*/
+.padre:hover .hijo/*animar al hijo dentro del padre existen dentro css. con la transform x va cambiando su posicion en el eje de la x tambien puede ser en el eje de la y*/{
+    /*transform: translatex(100%);
+    background-color: blueviolet; para que se pueda animar se tiene que sacar la trasform*/
+    animation-play-state: paused;/*hago que parece al hacer hover*/
+    /*animation: traslacion 4s ease-in-out 2 forwards; introduciendo el 2 o infinite o alternate del 0 al 100 y baja del 100 al 0, hago que se repita dos veces, forwards mantiene la transicion animation se fue de hijo para estar en la clase padre*/
+}
+@keyframes traslacion /*traslacion es una animacion que todavia no existe, atravez de la palabra clave keyframes(fotogramas clave)podemos decirle en que fotogramas queresmos que este y en que estado, se trabaja con porcentaje 0 al 100 */{
+    0%{
+        background-color:beige;
+        transform: translateX(0%)translateY(0%);
+    }
+    25%{
+        transform: translateX(100%) translateY(0%);
+    }
+    50%{
+        transform: translateX(100%) translateY(100%);
+    }
+    75%{
+        transform: translateX(0%) translateY(100%);
+    }
+    100%{
+        background-color: darkorange;
+        transform: translateX(0%) translateY(0%);/*movimiento*/
+    }
+}
