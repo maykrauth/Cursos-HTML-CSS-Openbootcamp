@@ -1,0 +1,36 @@
+h1{
+    color: red;
+    font-size: 4rem;
+}
+p{
+    color: black;
+    font-size: 2rem;
+}
+/*en la media si no especificamos nos pone el all and,
+print color blue, quiere decir que al momento de imprimir se vera de color blue not red*/
+@media (min-width:576px){
+    h1{
+        color: blue;
+    }
+}
+
+@media (min-width:900px){
+    h1{
+        color: rgb(22, 110, 43);
+    }
+}
+
+/*orientacion orizontal*/
+@media (orientation: landscape) and (min-height: 400px){
+    p{
+        color:brown
+    }
+}
+
+
+/*podemos sobre escribir el codido cuidado*/
+@media (min-height: 300px) and (min-width: 1100px){
+    h1{
+        color: rgb(255, 0, 136);
+    }
+}

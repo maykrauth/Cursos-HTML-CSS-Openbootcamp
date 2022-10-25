@@ -1,0 +1,28 @@
+.container{
+    display: grid;
+    gap: 0.5rem;
+    column-gap: 0.1rem;
+    row-gap: 1rem;
+    /*para distribuir los elemtos 3columnas que esten en automatico
+    otra manera de definir grid-t emplate-columns: repeat(3,auto)
+    grid-t emplate-columns:20px 3rem 25wv
+    grid-t emplate-columns: 1fr 1fr 1fr;trabajamos columnas y filas*/
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: 200px 5fr 100px;
+    /*grid-template-areas: 'head head head''main main aside''footer footer footer';*/
+}
+.item{
+    background-color: aquamarine;
+    padding: 0.25rem;
+    font-size: 2rem;
+    border: solid 1px blue;
+}
+.item1{
+    /*grid-area: head;
+    grid-column: 1/3;*/
+    grid-column: 2 / span 2;
+}
+.item9{
+    /*fila 2, columna 2,fila 4, columna 5*/
+    grid-area: 2/1/4/3;
+}

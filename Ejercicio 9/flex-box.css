@@ -1,0 +1,30 @@
+/*flexbox playground codepen.io/enxaneta/full/adlpwv*/
+.container{
+    background-color: yellow;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    min-height: 5rem;
+    /*eje principal x 
+    tag avanzados space-between el espacio del conteines lo distribuye solo en los huecos de los elemtos;
+    space-around lo distribuye de forma equitativa;space-evenly distribuyte de  dorma igualitaria*/
+    justify-content: space-around;
+    /*eje secundario y, stretch es el que viene por defecto qu eestira los items para que ocupe toda la pag;
+    baseline los items arriba.end al final y center */
+    align-items:center;
+    /*flex-direction:column*/
+    /*los elementos se van a comportar dependiendo el ancho de la pantalla
+    wrap empieza a disponer de otra manera emvolver para preserbar en la medida de lo posible width 10rem*/
+    flex-wrap: nowrap;
+}
+
+.item{
+    background-color: salmon;
+    padding: 0.25rem;
+    width: 10rem;
+}
+
+.item2{
+    /*tambien lo puedo hacer con justify-self:unset and*/
+    align-self: stretch;
+}
