@@ -1,0 +1,29 @@
+//funciones con cedena de texto
+@use "sass:string";
+@use "sass:math";
+
+@debug "hola";
+
+@debug string.index("Helvetica Neue", "Neue");
+
+$string:"Helvetica";
+$newString: string.insert($string," Bold", 11);
+
+@debug $newString;
+@debug str-length($newString);
+@debug str-slice($newString, 5 , 9);
+
+
+@debug string.to-upper-case("Roboto Mono");
+@debug string.to-lower-case("Roboto Mono");;
+
+
+@debug string.unique-id();
+////funciones con numeros
+
+@debug math.$e;
+@debug math.$pi;
+
+@debug math.ceil(4.6);
+
+@debug math.clamp(0, 256.36, 10); 

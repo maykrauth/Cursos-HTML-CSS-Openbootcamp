@@ -1,0 +1,11 @@
+.btn{
+    border: none;
+    padding: 0.25rem 0.5rem;
+    color: yellow;
+
+    &:hover{
+        background-color: burlywood;
+        color: rebeccapurple;
+        cursor: pointer;
+    }
+}
